@@ -1,0 +1,5 @@
+export const GET_POPULAR_MOVIES = "GET_MOVIES";
+export const GET_TOP_MOVIES = "GET_TOP_MOVIES";
+export const GET_MOVIE =  "GET_MOVIE";
+export const GET_UPCOMING_MOVIES = "GET_UPCOMING_MOVIES";
+export const GET_MOVIE_REVIEWS = "GET_MOVIE_REVIEWS";

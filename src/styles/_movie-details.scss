@@ -1,0 +1,99 @@
+@import "./variables";
+@import "./mixins";
+
+.movie-container {
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.movie-component {
+  box-shadow: $shadow-color;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  background-color: $primary-color;
+
+  .pc-section {
+    flex-direction: column;
+    display: flex;
+    flex: 0 0 50%;
+
+    &-1 {
+      padding: 0;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    &-2 {
+      padding: 2rem 2rem;
+      flex-direction: column;
+      display: flex;
+      flex: 0 0 50%;
+
+      span {
+        padding: 0.5em;
+        margin: 0.3em;
+        color: $fourth-color;
+      }
+
+      .pc-rating {
+        margin-bottom: 10px;
+        span {
+          color: $secondary-color;
+        }
+      }
+
+      .pc-title {
+        font-weight: 700;
+        font-family: "Francois One", sans-serif;
+        color: $fifth-color;
+      }
+
+      .pc-header h2.pc-title {
+        color: $third-color;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@include mediaMd {
+  .movie-component {
+    .pc-section-1 {
+      img {
+        width: 325px;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  .movie-container {
+    margin-top: 10px;
+  }
+
+  .movie-component {
+    .movie-component .pc-section {
+      flex: 0 0 100%;
+    }
+
+    .pc-section-1 {
+      img {
+        width: 100%;
+      }
+    }
+
+    .pc-section-2 {
+      padding: 1rem;
+      flex: 0 0 100%;
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

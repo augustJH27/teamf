@@ -1,0 +1,55 @@
+@import "./variables";
+@import "./mixins";
+
+.about-page-container {
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.about-page-component {
+  box-shadow: $shadow-color;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 2rem;
+  background-color: $primary-color;
+
+  h2 {
+    font-weight: 700;
+    font-family: "Francois One", sans-serif;
+    color: $fourth-color;
+  }
+}
+
+.follow-us-component {
+  box-shadow: $shadow-color;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  padding: 3rem 0rem;
+  background-color: $primary-color;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: black;
+&__media {
+	border-bottom: 1px solid white;
+	grid-column: 8/12;
+}
+	&__social-media {
+		margin-right: 0.5vw;
+	}
+.copyright {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+	}

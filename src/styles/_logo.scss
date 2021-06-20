@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./mixins";
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: black;
+&__media {
+	border-bottom: 1px solid white;
+	grid-column: 8/12;
+}
+	&__social-media {
+		margin-right: 0.5vw;
+	}
+.copyright {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+	}

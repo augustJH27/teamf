@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./keyframes";
+@import "./variables";
+
+.col-md-12 {
+  height: 80%;
+  width: 100%;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.profile-img-card {
+	height: 180%;
+	width: 30%;
+  justify-self: center;
+}
+
+.card.card-container {
+  width: 60%;
+  height: 120%;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2456;
+  top: 0;
+  background: transparent;
+}
+
+.btn-primary.btn-block {
+  background: #e50914;
+  padding: 4px 14px;
+  width: 40%;
+}
+
+.form-group {
+  align-items: center;
+  overflow: hidden;
+  padding: 4px 10px;
+}
+.form-control {
+  padding: 6px 10px;
+  color: white;
+  border-radius: 8px;
+}
+
+.input.form-control {
+  color:#fff;
+} 
+
+.h4 {
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.register-account {
+  h6 {
+    padding: 8px 10px;
+    color: white;
+    text-align: center;
+  }
+
+  p {
+    padding: 6px 10px;
+    color: $fifth-color;
+    text-align: center;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,40 @@
+@import "./variables";
+@import "./mixins";
+
+.review-container {
+	padding: 1rem;
+	margin-top: 10px;
+}
+
+.review-component {
+	box-shadow: $shadow-color;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	padding: 2rem 2rem;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	display: flex;
+	background-color: $primary-color;
+
+	small {
+		color: $fourth-color;
+	}
+
+	p {
+		word-wrap: break-word;
+	}
+}
+
+@include mediaSm {
+	.review-container {
+		padding: 1rem;
+	}
+
+	.review-component {
+		padding: 1rem;
+		word-break: break-word;
+		p {
+			font-size: 0.8em;
+		}
+	}
+}
