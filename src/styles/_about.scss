@@ -12,7 +12,7 @@
   overflow: hidden;
   flex-wrap: wrap;
   margin: 0 auto;
-  display: flex;
+  // display: flex;
   padding: 2rem 2rem;
   background-color: $primary-color;
 
@@ -28,17 +28,18 @@
   border-radius: 1.5rem;
   overflow: hidden;
   flex-wrap: wrap;
-  margin: 0 auto;
+  // margin: 0 auto;
   display: flex;
   padding: 3rem 0rem;
   background-color: $primary-color;
 }
 
-.footer {
+.footer_social {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: black;
+  column-gap: 20px;
 &__media {
 	border-bottom: 1px solid white;
 	grid-column: 8/12;
@@ -51,5 +52,6 @@
   display: flex;
   justify-content: center;
   background-color: black;
+  font-size: 10px;
 }
 	}

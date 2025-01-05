@@ -8,8 +8,8 @@ const MovieReviewsList = ({ movieReviews }) => {
         <div className="review-container" >
             {movieReviews && (
                 <div>
-                    <h3>Reviews</h3>
                     <div className="review-component">
+                        <h3>Reviews</h3>
                         {movieReviews ? movieReviews.map(review => {
                             return (
                                 <div key={review.id}>

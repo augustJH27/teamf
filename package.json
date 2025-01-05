@@ -13,7 +13,8 @@
     "react-strap": "^0.0.1",
     "react-validation": "^3.0.7",
     "redux": "^4.1.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "validator": "^13.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
