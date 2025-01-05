@@ -21,14 +21,21 @@
 }
 
 .card.card-container {
-  width: 60%;
-  height: 120%;
+  width: 30%;
   justify-content: center;
   position: -webkit-sticky;
   position: sticky;
   z-index: 2456;
   top: 0;
   background: transparent;
+
+  @media screen and (min-width: 768px) { // Tablet and smaller devices
+    width: 60%;
+  }
+
+  @media screen and (max-width: 576px) { // Mobile devices
+    width: 90%;
+  }
 }
 
 .btn-primary.btn-block {

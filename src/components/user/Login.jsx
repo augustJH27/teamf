@@ -53,7 +53,7 @@ const Login = (props) => {
       console.log("check");
       dispatch(login(email, password))
         .then(() => {
-          props.history.push("/milan-tv");
+          props.history.push("/");
           // window.location.reload();
         })
         .catch(() => {
